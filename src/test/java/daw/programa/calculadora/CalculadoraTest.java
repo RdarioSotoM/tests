@@ -35,17 +35,4 @@ public class CalculadoraTest {
         assertEquals(expected, calc.Multiplicar(numero1, numero2));
     }
 
-    @BeforeEach
-    void sumando(){
-        int i = 1;
-        int a = 2;
-        Calculadora d = new Calculadora();
-        d.sumar(i, a);
-    }
-
-    @AfterEach
-    void borrar(){
-        int i = 0;
-        int a = 0;
-    }
 }
