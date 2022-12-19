@@ -1,8 +1,10 @@
 package daw.programa.calculadora;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class CalculadoraTest {
     
@@ -31,5 +33,19 @@ public class CalculadoraTest {
         Calculadora calc = new Calculadora();
 
         assertEquals(expected, calc.Multiplicar(numero1, numero2));
+    }
+
+    @BeforeEach
+    void sumando(){
+        int i = 1;
+        int a = 2;
+        Calculadora d = new Calculadora();
+        d.sumar(i, a);
+    }
+
+    @AfterEach
+    void borrar(){
+        int i = 0;
+        int a = 0;
     }
 }
